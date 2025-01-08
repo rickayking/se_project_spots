@@ -1,0 +1,106 @@
+.profile {
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 34px 0 20px;
+    border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
+}
+
+.profile__avatar {
+    margin-right: 20px;
+    height: 190px;
+    width: 190px;
+}
+
+.profile__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__name {
+    margin: 0 0 12px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-clamp: 3;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-width: 420px;
+}
+
+.profile__description {
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-clamp: 3;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-width: 420px;
+}
+
+.profile__edit-btn {
+    margin-top: auto;
+    background-color: #fcf5e5;
+    opacity: 70%;
+    border-style: none;
+}
+
+.profile__add-btn {
+    margin-left: auto;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 149px;
+    height: 52px;
+    border-radius: 8px;
+    background-color: #212121;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    color: #fcf5e5;
+    gap: 8px;
+}
+
+@media screen and (max-width: 627px) {
+    .profile {
+        flex-direction: column;
+        max-width: 288px;
+        align-items: center;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .profile__avatar {
+        margin: 0 0 12px;
+        height: 80px;
+        width: 80px;
+    }
+
+    .profile__description {
+        margin: 0 0 32px;
+        font-size: 16px;
+        max-width: 288px;
+    }
+
+    .profile__column {
+        font-size: 20px;
+        margin-right: 0;
+    }
+
+    .profile__name {
+        margin-bottom: 6px;
+        font-size: 20px;
+        max-width: 288px;
+    }
+
+    .profile__add-btn {
+        margin: 0;
+        max-width: 288px;
+        width: 100%;
+    }
+
+    .profile__edit-btn {
+        margin: 0 auto;
+    }
+}
